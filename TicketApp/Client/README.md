@@ -23,3 +23,7 @@ Section 3
    a. Microsfot.EntityFrameworkCore version 6
    b. Microsfot.EntityFrameworkCore.Design (for migration) version 6
    c. Microsfot.EntityFrameworkCore.SqlServer version 6
+
+Section 4
+1. Create data context class to connect to database
+2. Register data context to program.cs
