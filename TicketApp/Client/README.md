@@ -14,3 +14,12 @@ Section 1
 
 Section 2
 1. make the component ticket list so the code is less
+
+Section 3
+1. Add sql server to connection string JSON appsettings.json  under server folder
+2. Make sure dotnet ef is already installed by running dotnet ef if not yet the run this command to install
+   dotnet tools install --global dotnet-ef
+3. Install these NuGet Packages
+   a. Microsfot.EntityFrameworkCore version 6
+   b. Microsfot.EntityFrameworkCore.Design (for migration) version 6
+   c. Microsfot.EntityFrameworkCore.SqlServer version 6
