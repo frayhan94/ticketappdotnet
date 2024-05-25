@@ -1,0 +1,35 @@
+<div class="col-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <h6 class="urgent-status-ticket">@UrgencyStatus}</h6>
+                </div>
+                <div class="col text-end">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+            </div>
+            <h5 class="card-title">@Title</h5>
+            <p class="card-text">@Description</p>
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="text-date">@Date</div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: @Progress%" aria-valuenow="@Progress" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col text-end badge-status-ticket-wrapper">
+                    <span class="badge-status-ticket badge rounded-pill bg-primary">@BadgeText</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@code {
+    [Parameter] public string UrgencyStatus { get; set; } = "High";
+    [Parameter] public string Title { get; set; } = "Research on AI Tools";
+    [Parameter] public string Description { get; set; } = "Find the affordable AI Tools";
+    [Parameter] public string Date { get; set; } = "09/09/2022";
+    [Parameter] public int Progress { get; set; } = 25;
+    [Parameter] public string BadgeText { get; set; } = "Primary";
+}
