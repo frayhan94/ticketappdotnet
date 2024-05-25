@@ -10,6 +10,7 @@ Pre-requisite
 Section 1
 1. Add basic UI to display all list of ticket
 2. Remove unnecessary file for better focus on learning
+3. Add navigation item on the header
 
 Section 2
 1. make the component ticket list so the code is less
