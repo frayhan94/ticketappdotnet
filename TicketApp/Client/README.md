@@ -10,3 +10,4 @@ Pre-requisite
 Section 1
 1. Add basic UI to display all list of ticket
 2. Remove unnecessary file for better focus on learning
+3. Add navigation item on the header
