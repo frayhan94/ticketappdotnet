@@ -1,0 +1,36 @@
+
+.badge-status-ticket-wrapper {
+    margin-top: 16px;
+}
+.badge-status-ticket {
+    padding: 8px;
+    width: 90px;
+}
+
+
+.text-date {
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: grey;
+    font-weight: 500;
+}
+
+.urgent-status-ticket {
+    color: #842029;
+    font-weight: bold;
+}
+
+.medium-status-ticket {
+    color: green;
+    font-weight: bold;
+}
+
+.low-status-ticket {
+    color: orange;
+    font-weight: bold;
+}
+
+.title-category-ticket {
+    margin-bottom: 16px;
+}
+

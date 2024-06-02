@@ -1,18 +1,30 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager Navigation
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
     <main>
         <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            <button type="button" class="btn btn-primary" @onclick="NavigateHome">
+                <span class="oi oi-home" title="Home" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="btn btn-primary" @onclick="NavigateToAddPage">
+                <span class="oi oi-plus" title="Add" aria-hidden="true"></span>
+            </button>
         </div>
-
         <article class="content px-4">
             @Body
         </article>
     </main>
 </div>
 
+@code {
+    private void NavigateHome()
+    {
+        Navigation.NavigateTo("/");
+    }
+
+    private void NavigateToAddPage()
+    {
+        Navigation.NavigateTo("/add");
+    }
+}
